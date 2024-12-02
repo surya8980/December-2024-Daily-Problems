@@ -1,4 +1,4 @@
-# Check If N and Its Double Exist
+# [Check If N and Its Double Exist](https://github.com/surya8980/December-2024-Daily-Problems/blob/main/LeetCode/01-Dec-2024/Check%20If%20N%20and%20Its%20Double%20Exist.java)
 # Problem Statement:  
 Given an array arr of integers, check if there exist two indices i and j such that :  
 
