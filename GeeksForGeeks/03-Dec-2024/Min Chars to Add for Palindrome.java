@@ -1,22 +1,39 @@
 class Solution {
-    public static int minChar(String s) {
-        // Write your code here
-        int count =0;
-        int i=0;
+    
+    public static int[] computeLPS(String s){
         int n = s.length();
-        int j = n-1;
-        int last = j;
-        while(i<j){
-            if(s.charAt(i)==s.charAt(j)){
-                i++;
-                j--;
+        
+        int pre = 0;
+        int suff = 1;
+        
+        int []lps = new int[n];
+        
+        while(suff < n){
+            if(s.charAt(pre) == s.charAt(suff)){
+                pre ++;
+                lps[suff] = pre;
+                suff ++;
             }
-            else {
-                count++;
-                i=0;
-                j=--last;
+            else{
+                if(pre == 0){
+                    lps[suff] = 0;
+                    suff ++;
+                }
+                else{
+                    pre = lps[pre-1];
+                }
             }
         }
-        return count;
+        
+        return lps;
+    }
+    public static int minChar(String s) {
+        // Write your code here
+        String reverse = new StringBuilder(s).reverse().toString();
+        String concat = s + "#" + reverse;
+        
+        int []lps = computeLPS(concat);
+        
+        return s.length() - lps[lps.length - 1];
     }
 }
