@@ -1,3 +1,4 @@
+
 class Solution {
     static int merge(int [] arr,int low,int mid,int high){
         ArrayList<Integer> temp = new ArrayList<>();
@@ -31,9 +32,9 @@ class Solution {
         int cnt=0;
         if(low>=high)return cnt;
         int mid= (low+high)/2;
-        ms(arr,low,mid);
-        ms(arr,mid+1,high);
-        merge(arr,low,mid,high);
+        cnt+=ms(arr,low,mid);
+        cnt+=ms(arr,mid+1,high);
+        cnt+=merge(arr,low,mid,high);
         return cnt;
     }
     static int inversionCount(int arr[]) {
