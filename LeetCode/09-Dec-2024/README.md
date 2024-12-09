@@ -1,4 +1,4 @@
-# [Special Array II](https://github.com/surya8980/December-2024-Daily-Problems/blob/main/LeetCode/09-Dec-2024/Special%20Array%20II-%20Brute%20Force.java) 
+# [Special Array II](https://github.com/surya8980/December-2024-Daily-Problems/blob/main/LeetCode/09-Dec-2024/Special%20Array%20II-%20Optimal%20Approach.java) 
 # Problem Statement:
 An array is considered special if every pair of its adjacent elements contains two numbers with different parity.  
 
