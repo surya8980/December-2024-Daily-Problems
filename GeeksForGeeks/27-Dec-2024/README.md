@@ -4,7 +4,7 @@ Given an array arr[] and an integer target. You have to find numbers of pairs in
 
 **Examples:**
 
-**Input:** arr[] = [1, 5, 7, -1, 5], target = 6 
+**Input:** arr[] = [1, 5, 7, -1, 5], target = 6   
 
 **Output:** 3
 
